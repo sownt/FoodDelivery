@@ -1,5 +1,6 @@
 package com.vosxvo.fooddelivery.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,15 +13,19 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.vosxvo.fooddelivery.R;
+import com.vosxvo.fooddelivery.callback.SimpleCallback;
 
-public class StarterActivity extends FragmentActivity {
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
+public class StarterActivity extends FragmentActivity implements SimpleCallback {
     private static final int NUM_PAGES = 2;
     private ViewPager2 pager;
     private TabLayout tabLayout;
     private FragmentStateAdapter adapter;
 
     @Override
-    protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starter);
 
@@ -44,7 +49,13 @@ public class StarterActivity extends FragmentActivity {
         }
     }
 
-    private class FragmentAdapter extends FragmentStateAdapter {
+    @Override
+    public void callback(@Nullable Bundle bundle) {
+        startActivity(new Intent(this, SplashActivity.class));
+        finishAffinity();
+    }
+
+    private static class FragmentAdapter extends FragmentStateAdapter {
         public FragmentAdapter(@NonNull
                                @org.jetbrains.annotations.NotNull FragmentActivity fragmentActivity) {
             super(fragmentActivity);
