@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/new_conversation_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp">
+            <EditText
+                android:id="@+id/to_address"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_bg_gray"
+                android:layout_weight="1"
+                android:hint="To"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="24dp"/>
+
+            <ImageButton
+                android:id="@+id/to_done"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_round_done_outline_24"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/new_conversation_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/chat_bg"
+            android:text="@string/type_a_message"
+            android:textSize="16sp"
+            android:paddingHorizontal="21dp"
+            android:paddingVertical="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_round_send"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:tint="@color/app_gray_light" />
+
+    </LinearLayout>
+
+</LinearLayout>
