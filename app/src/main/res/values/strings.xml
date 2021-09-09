@@ -1,7 +1,31 @@
 <resources>
     <string name="app_name">Food Delivery</string>
+    <string name="default_text">Lorem ipsum dolor sit amet</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="nick_name">Nick name</string>
+    <string name="edit">Edit</string>
+    <string name="for_you">For you</string>
+    <string name="browse_all">Browse all</string>
+    <string name="search">Search</string>
+    <string name="vnd">đ</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="added_shopping_cart">This item has been added to your Shopping Cart.</string>
+    <string name="go_to_cart">Go to Cart</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="all">All</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="stay_here">Stay here</string>
+    <string name="nothing_here">Nothing here.</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit erat velit, eu viverra orci tristique quis. Duis sollicitudin, libero sed scelerisque consectetur, dolor diam aliquam massa, at egestas risus magna et orci. Cras ut ex nec turpis tempor ultricies vel et ligula. Suspendisse potenti. Ut eget quam dignissim massa scelerisque auctor. Curabitur et dictum dui. Donec vel pulvinar ligula. Pellentesque in leo non diam scelerisque semper. Nam pulvinar mauris vel dolor commodo pretium. Donec aliquet, ex sit amet lacinia fermentum, eros mi bibendum mi, nec aliquam urna nunc et nulla. Morbi vel urna ut tellus aliquam scelerisque. Cras volutpat mollis dui ac consectetur. Curabitur lobortis ligula eu sapien placerat fringilla. Suspendisse nulla odio, bibendum ac diam quis, consectetur vehicula nisl. Donec ut laoreet ante. Donec pulvinar lacinia turpis sit amet porttitor. Donec consequat et magna non blandit. Nulla facilisi. Quisque est nisl, bibendum ut orci in, tempus malesuada sem. Nunc elit felis, facilisis at nulla id, porttitor tincidunt eros. Maecenas pulvinar purus in mauris mattis hendrerit at id nisl. Suspendisse lobortis hendrerit aliquam. Vivamus porttitor erat vitae venenatis viverra. Aenean leo justo, imperdiet sed purus at, bibendum ullamcorper magna. Donec rhoncus leo eget mi elementum bibendum. Quisque interdum feugiat felis a molestie. Donec at diam a mauris accumsan sollicitudin. Fusce convallis augue placerat, mollis nisl ut, hendrerit elit. Curabitur rhoncus mi porttitor rutrum rutrum. Nunc in arcu condimentum, vestibulum odio finibus, aliquam leo. Maecenas tincidunt dignissim massa, ut posuere mi pretium eu. Mauris aliquet suscipit est ac porttitor. Praesent euismod ipsum mauris, vitae dignissim ex vulputate quis. Vivamus a fermentum erat. Cras consequat fringilla luctus. Ut sed mi ligula. In tempus tristique bibendum. Nunc ultrices nec ligula id fringilla. Ut sit amet enim arcu. Nam sem est, interdum eu convallis sed, bibendum sit amet libero. Quisque sagittis, lorem quis sagittis condimentum, ante felis ultrices lacus, eget euismod est mi non purus. Nam et ex sodales, facilisis eros sed, venenatis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam venenatis elit eget nisl aliquet, in aliquam tellus rhoncus. Duis placerat sollicitudin urna, eget vestibulum tortor ornare quis. Vestibulum eget purus mi. Vivamus faucibus lorem id condimentum pharetra. Quisque gravida pellentesque lacus eu cursus. Nam tristique bibendum mauris eu sollicitudin. Nullam odio nunc, ultrices at vestibulum eget, aliquam nec lectus. Praesent quis maximus lacus, sit amet faucibus orci. Nulla non ornare lectus. Curabitur placerat orci ac facilisis condimentum. In ultricies id urna quis ultricies. Aenean id convallis nulla, nec eleifend leo. Donec imperdiet aliquam ipsum eget consequat. Vivamus felis metus, tristique in elit sit amet, vestibulum luctus tellus. Quisque finibus non est consequat viverra. Nullam sit amet lacus sit amet ipsum convallis tempor sed rhoncus quam. Vestibulum sit amet leo enim. Vivamus sagittis ipsum vitae nisi sollicitudin eleifend. </string>
+    <string name="my_orders">My Orders</string>
+    <string name="order_hint">By tapping "Confirm", you accept the following Food Delivery \'s <u>Terms of Service</u>, <u>Privacy Policy</u>.</string>
 </resources>

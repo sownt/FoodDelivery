@@ -4,18 +4,93 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/chat_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/gradient_black.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_logout_32.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_add_circle_outline_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_call_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_home_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_maps_home_work_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_no_food_64.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_remove_circle_outline_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_search_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_shopping_cart_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_round_view_list_32.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_bg_blue.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_bg_green.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_bg_red.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_bg_yellow.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_grad_bg_1.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_grad_bg_2.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_grad_bg_3.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_grad_bg_4.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/icon_grad_bg_5.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/indicator_normal.xml" value="0.67" />
+        <entry key="app/src/main/res/drawable/indicator_selected.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable/indicator_selector.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/message_bg_left.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/message_bg_right.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/new_ic_launcher_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/new_ic_launcher_foreground.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/new_launcher_background.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/new_launcher_foreground.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_bg_gray.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_bg_icon_primary.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/round_bg_trans.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_bg_white.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/round_bottom_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_bottom_bg_white.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_bottom_left_outline_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_bottom_right_outline_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_top_bg_white.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_top_left_outline_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/round_top_right_outline_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/search_bg.xml" value="0.371875" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_food.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_new_message.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_order.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_order_detail.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/activity_shop.xml" value="0.17299898682877407" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_starter.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/add_to_cart_bottom_sheet.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_conversation.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_history_all.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_history_cancelled.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_history_completed.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_history_pending.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_new_conversation.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/generate_menu.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/item_cart.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_chat.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_food_large.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_food_minimal.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/item_food_portrail.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/item_food_small.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_message.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_message_left.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_message_right.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_order.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_top_banner.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/order_bottom_sheet.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/order_bottom_sheet_successful.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/new_ic_launcher.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/new_ic_launcher_round.xml" value="0.36615384615384616" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="15" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
