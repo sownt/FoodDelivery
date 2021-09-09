@@ -17,9 +17,7 @@ import com.vosxvo.fooddelivery.R;
 import com.vosxvo.fooddelivery.api.API;
 import com.vosxvo.fooddelivery.model.Food;
 import com.vosxvo.fooddelivery.model.Order;
-import com.vosxvo.fooddelivery.module.DataSource;
-
-import java.util.Objects;
+import com.vosxvo.fooddelivery.module.DataModule;
 
 import javax.inject.Inject;
 
@@ -31,7 +29,7 @@ import retrofit2.Response;
 @AndroidEntryPoint
 public class SplashActivity extends AppCompatActivity {
     @Inject
-    public DataSource source;
+    public DataModule dataModule;
     @Inject
     public API api;
 
@@ -41,18 +39,23 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
         mainLayout = findViewById(R.id.activity_splash);
 
-        new Handler().postDelayed(() -> checkSignedIn(), 1500);
+        new Handler().postDelayed(this::checkSignedIn, 1500);
     }
 
     private void checkSignedIn() {
-        if (isSignedIn()) {
+        if (isSignedIn()) { // if signed in, get data and switch to MainActivity
             getFoodList();
-        } else {
+        } else {    // if not, switch to log in / sign up
             switchActivity(new Intent(this, StarterActivity.class));
         }
+    }
+
+    private boolean isSignedIn() {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser != null) return true;
+        return false;
     }
 
     private void switchActivity(@NonNull Intent intent) {
@@ -65,7 +68,7 @@ public class SplashActivity extends AppCompatActivity {
         task.enqueue(new Callback<Food[]>() {
             @Override
             public void onResponse(Call<Food[]> call, Response<Food[]> response) {
-                source.setFoods(response.body());
+                if (dataModule != null) dataModule.setFoods(response.body());
                 getHistoryOrder();
             }
 
@@ -82,18 +85,21 @@ public class SplashActivity extends AppCompatActivity {
 
     private void getHistoryOrder() {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser == null) return;
         Order.User user = new Order.User(currentUser.getEmail());
         Call<Order[]> task = api.getOrderHistory(user);
+
         task.enqueue(new Callback<Order[]>() {
             @Override
             public void onResponse(Call<Order[]> call, Response<Order[]> response) {
                 Order[] result = response.body();
-                if (result == null) {
+                if (result == null) {   // No order had made, then switch to MainActivity
                     switchActivity();
                     return;
                 }
-                source.setOrders(result);
-                for (int i = 0; i < result.length; ++i) {
+                dataModule.setOrders(result);
+
+                for (int i = 0; i < result.length; ++i) {   // Get specify order data
                     int id = result[i].getId();
                     getHistory(id, i, user);
                 }
@@ -123,7 +129,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Order> call, Response<Order> response) {
                 Order result = response.body();
-                source.getOrders()[index] = result;
+                if (result != null) dataModule.getOrders()[index] = result;
             }
 
             @Override
@@ -135,11 +141,5 @@ public class SplashActivity extends AppCompatActivity {
                         .show();
             }
         });
-    }
-
-    private boolean isSignedIn() {
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (currentUser != null) return true;
-        return false;
     }
 }

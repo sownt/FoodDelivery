@@ -14,6 +14,8 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.vosxvo.fooddelivery.R;
 import com.vosxvo.fooddelivery.callback.SimpleCallback;
+import com.vosxvo.fooddelivery.ui.start.LoginFragment;
+import com.vosxvo.fooddelivery.ui.start.SignUpFragment;
 
 import dagger.hilt.android.AndroidEntryPoint;
 

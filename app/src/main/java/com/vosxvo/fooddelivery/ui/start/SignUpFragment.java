@@ -1,4 +1,4 @@
-package com.vosxvo.fooddelivery.ui;
+package com.vosxvo.fooddelivery.ui.start;
 
 import android.os.Bundle;
 import android.util.Log;
