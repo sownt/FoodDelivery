@@ -1,5 +1,6 @@
 package com.vosxvo.fooddelivery.api;
 
+import com.vosxvo.fooddelivery.BuildConfig;
 import com.vosxvo.fooddelivery.model.Food;
 import com.vosxvo.fooddelivery.model.Order;
 import com.vosxvo.fooddelivery.model.Shop;
@@ -11,9 +12,8 @@ import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 public interface API {
-//    String MAIN_API_BASE_URL = "https://flask-api-app-order.herokuapp.com";
-    String MAIN_API_BASE_URL = "http://172.17.0.2:5000";
-    String ADMIN_UID = "7HCgAB8qWLeF0fG4M8rTzVn3Isg1";
+    String MAIN_API_BASE_URL = BuildConfig.MAIN_API_BASE_URL;
+    String ADMIN_UID = BuildConfig.ADMIN_UID;
 
     @GET("/shop/")
     Call<Shop[]> getAllShop();
