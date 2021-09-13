@@ -1,3 +1,4 @@
+![top-banner](images/banner.jpg)
 ## Food Delivery for Android
 Food Delivery is a sample project, you can fork and customize to make your awesome application. This repo contains all source code and config files to make your app. This application using [flaskApi](https://github.com/vutran1305/flaskApi).
 
